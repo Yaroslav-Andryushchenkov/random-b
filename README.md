@@ -15,5 +15,5 @@ Step by step instruction:
 4. To train model use model.ipynb notebook. The model generates following files: data.pickle.idx, data.pickle-data.pkl.
 These files are necessary to run bot-server.py, they must be placed in the same directory with bot-server.py
 4. Use bot-server.py to run telegram bot webser. In advance you sould register bot in telegram and get token that must be hardcoded in bot-server.py.
-You also need to download base model files (saved_model.pb and variables foldere) from https://tfhub.dev/google/universal-sentence-encoder-multilingual/3
+You also need to download base model files (saved_model.pb and variables folder) from https://tfhub.dev/google/universal-sentence-encoder-multilingual/3
 Put the files into the same directory as bot-server.py
