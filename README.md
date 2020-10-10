@@ -12,6 +12,8 @@ Step by step instruction:
 
 2. The data in JSON format is loaded, preprocessed and stripped of numbers, special symbols etc. in data-cleaning.ipynb notebook that can be opened e.g. in Jupyter. Make sure to put all necessary JSON files in one directory and name it as the path for your data in the notebook. The result is an 'all.txt' file with all sentences that are used for teaching the model.
 3. After we have the cleaned data its time to teach the model to work with it.
-4. To train model use model.ipynb notebook. The model generates following vairables folder and files following: data.pickle.idx, data.pickle-data.pkl, saved_model.pb.
-These files are necessary to run bot-server.py, they must be placed in the same directory with bot-server.py ('variables folder too')
+4. To train model use model.ipynb notebook. The model generates following files: data.pickle.idx, data.pickle-data.pkl.
+These files are necessary to run bot-server.py, they must be placed in the same directory with bot-server.py
 4. Use bot-server.py to run telegram bot webser. In advance you sould register bot in telegram and get token that must be hardcoded in bot-server.py.
+You also need to download base model files (saved_model.pb and variables foldere) from https://tfhub.dev/google/universal-sentence-encoder-multilingual/3
+Put the files into the same directory as bot-server.py
