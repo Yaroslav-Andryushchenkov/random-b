@@ -24,7 +24,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                      level=logging.INFO)
 
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Осторожно! Это бот обученный на _random_b")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Осторожно! Этот бот обучен на архиве _random_b чата. (предложения о работе присылать сюда: 7098013@gmail.com)")
 
 from telegram.ext import CommandHandler
 start_handler = CommandHandler('start', start)
